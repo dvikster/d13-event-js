@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    margin:20px;
+}
+.test{
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    background: orange;
+   }
+
+.task2_img{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+.sliderwrap{
+    margin: 50px auto;
+    width: 640px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.sliderwrap img{
+    width: 640px;
+    height:400px;
+    display: block;
+
+}
+.slider2wrap{
+    width: 600px;
+    height: 150px;
+    margin: 50px auto;
+}
+#slider2 img{
+    height: 150px;
+    width:200px;
+    display: block;
+    float: left;
+    border: 2px solid transparent;
+}
