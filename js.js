@@ -2,6 +2,7 @@
 // мыши над ним, блок менял цвет.
 var y='';
 document.querySelector('.test').onmousewheel = function (event){
+    event.preventDefault();
     y = event.deltaY;
     console.log(y);
     if(y<0){
@@ -18,6 +19,7 @@ document.querySelector('.test').onmousewheel = function (event){
 // масштабирования изображения при прокрутке колеса мыши
 
 document.querySelector('.task2_img').onmousewheel = function (event){
+    event.preventDefault();
     y = event.deltaY;
     if(y<0){
         this.style.width = '500px';
@@ -26,6 +28,7 @@ document.querySelector('.task2_img').onmousewheel = function (event){
         this.style.width = '200px';
     }
     console.log(event);
+    // return false;
 }
 
 // Задание 3. Создайте вертикальный слайдер, в котором элементы
@@ -34,6 +37,7 @@ var i = 0;
 var stopSlider= 0;
 
 document.querySelector('.slider').onmousewheel = function (event){
+    event.preventDefault();
     y = event.deltaY;
     stopSlider = -(this.offsetHeight-420);
     console.log(this.offsetHeight);
@@ -65,7 +69,7 @@ console.log(img);
 var count=0;
 img[0].style.borderColor = 'red';
 document.getElementById('slider2').onmousewheel = function (event) {
-
+    event.preventDefault();
     y = event.deltaY;
     if(y>0){
         if (count < (img.length-1)){
